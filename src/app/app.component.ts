@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'PlatzySquare';
+  listo = false;
+  nombre = ''; //javascript
+  apellido: string= ''; //TypeScript
+  clickeado = 0;
+
+  constructor(){
+  	setTimeout(() => {
+  		this.listo = true;
+  	}, 3000)
+  }
+  sumarAlgo(){
+  	this.clickeado += 1;
+  }
 }
